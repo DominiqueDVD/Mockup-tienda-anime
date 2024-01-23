@@ -1,0 +1,1517 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrar productos</title>
+    <link rel="stylesheet" href="./styles/crearTorneo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<header class="p-3 fixed-top text-bg-dark ">
+
+    <div class="d-flex align-items-center" id="nav">
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2
+                    justify-content-center mb-md-0">
+            <li><a href="/index.html" class="nav-link px-2 text-white" id="letras1">Tienda Konishiwa</a></li>
+
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0
+            text-dark text-decoration-none">
+                <img src="/assets/productos/otros/carita.png" alt="" class="cara" style="margin: auto">
+
+            </a>
+            <!-- <h6 style="margin:auto">Administrador</h6> -->
+
+            <li><a href="./listaProductosAdmin.html" class="nav-link px-2 " id="letras">ADMINISTRAR PRODUCTOS</a></li>
+            <li><a href="./listaTorneosAdmin.html" class="nav-link px-2 " id="letras">ADMINISTRAR TORNEOS</a></li>
+            <!-- <li><a href="/verProductos.html" class="nav-link
+                px-2 " id="letras">PRODUCTOS</a></li> -->
+
+        </ul>
+
+
+        <!-- <form action="" class="search-bar">
+            <input type="search" name="search" required autocomplete="on" placeholder="Buscar productos"
+                class="lupa">
+            <button class="searsh-button" type="submit">
+                <span>Buscar productos</span>
+            </button>
+        </form> -->
+
+        <div class="dropdown text-end" style="margin-right: 5%;">
+
+            <a href="/loginAdmin.html" style="display: flex;">
+                <h6 style="text-decoration: none; color: white;">Administrador</h6>
+                <img src="/assets/productos/otros/User_icon_white.png" id="user" alt="">
+                <h6>Cerrar sesión</h6>
+            </a>
+
+            <!--            
+            <a href="/carritoCompra.html">
+
+                <img src="/assets/productos/otros/icon_carrito_de_compras_b.png" id="user" alt="">
+            </a> -->
+        </div>
+
+    </div>
+</header>
+
+<body style="padding-top: 50px;">
+    <section class=" h-custom"
+        style="background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%); height:fit-content">
+        <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-12">
+                    <div class="card card-registration card-registration-2" style="border-radius: 15px;">
+                        <div class="card-body p-0">
+                            <div class="row g-0">
+                                <div class="col-lg-12">
+                                    <div class="p-5">
+
+                                        <div style="display: flex; justify-content: space-between;">
+                                            <h1>Administrar productos</h1>
+
+                                            <a href="#modalCrearProducto" class="btn btn-success">
+                                                <div style="display:inline;">
+                                                    <span style="font-size: 20px; margin:0; margin-bottom: 5;">+</span>
+                                                    <span>Agregar producto</span>
+                                                </div>
+
+
+                                            </a>
+                                        </div>
+                                        <div class="row justify-content-center mb-3">
+                                            <div class="col-md-12 col-xl-10">
+                                                <div class="card shadow-0 border rounded-3">
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                                                                <div
+                                                                    class="bg-image hover-zoom ripple rounded ripple-surface">
+                                                                    <img src="./assets/productos/funkos/42932_MHA_TEACHER_ALLMIGHT_WEB.png"
+                                                                        class="productoMini" />
+                                                                    <a href="#!">
+                                                                        <div class="hover-overlay">
+                                                                            <div class="mask"
+                                                                                style="background-color: rgba(253, 253, 253, 0.15);">
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-lg-6 col-xl-6">
+                                                                <h5>Funko pop - All Might traje de profesor</h5>
+                                                                <div class="d-flex flex-row">
+                                                                    <div class="text-danger mb-1 me-2">
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                    </div>
+                                                                    <span>15 unidades</span>
+                                                                </div>
+                                                                <div class="mt-1 mb-0 text-muted small">
+                                                                    <span>FUNKO</span>
+                                                                    <span class="text-primary"> • </span>
+                                                                    <span>My Hero Academia</span>
+                                                                    <!-- <span class="text-primary"> • </span> -->
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
+                                                                <div class="d-flex flex-row align-items-center mb-1">
+                                                                    <h4 class="mb-1 me-1">$12.990</h4>
+                                                                </div>
+                                                                <div class="d-flex flex-column mt-4">
+                                                                    <a href="#modalEditarProducto"
+                                                                        class="btn btn-primary btn-sm"
+                                                                        type="button">Editar</a>
+                                                                    <a href="#modalEliminado" class="btn btn-danger btn-sm mt-2"
+                                                                        type="a">
+                                                                        Eliminar
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row justify-content-center mb-3">
+                                            <div class="col-md-12 col-xl-10">
+                                                <div class="card shadow-0 border rounded-3">
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                                                                <div
+                                                                    class="bg-image hover-zoom ripple rounded ripple-surface">
+                                                                    <img src="./assets/productos/funkos/42933_MHA_AllForOne_WEB.png"
+                                                                        class="productoMini" />
+                                                                    <a href="#!">
+                                                                        <div class="hover-overlay">
+                                                                            <div class="mask"
+                                                                                style="background-color: rgba(253, 253, 253, 0.15);">
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-lg-6 col-xl-6">
+                                                                <h5>Funko pop - All for one</h5>
+                                                                <div class="d-flex flex-row">
+                                                                    <div class="text-danger mb-1 me-2">
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                    </div>
+                                                                    <span>10 unidades</span>
+                                                                </div>
+                                                                <div class="mt-1 mb-0 text-muted small">
+                                                                    <span>FUNKO</span>
+                                                                    <span class="text-primary"> • </span>
+                                                                    <span>My Hero Academia</span>
+                                                                    <!-- <span class="text-primary"> • </span> -->
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
+                                                                <div class="d-flex flex-row align-items-center mb-1">
+                                                                    <h4 class="mb-1 me-1">$12.990</h4>
+                                                                </div>
+                                                                <div class="d-flex flex-column mt-4">
+                                                                    <a href="#modalEditarProducto"
+                                                                        class="btn btn-primary btn-sm"
+                                                                        type="button">Editar</a>
+                                                                    <a href="#modalEliminado" class="btn btn-danger btn-sm mt-2"
+                                                                        type="a">
+                                                                        Eliminar
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row justify-content-center mb-3">
+                                            <div class="col-md-12 col-xl-10">
+                                                <div class="card shadow-0 border rounded-3">
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                                                                <div
+                                                                    class="bg-image hover-zoom ripple rounded ripple-surface">
+                                                                    <img src="./assets/productos/mangas/540.webp"
+                                                                        class="productoMini" />
+                                                                    <a href="#!">
+                                                                        <div class="hover-overlay">
+                                                                            <div class="mask"
+                                                                                style="background-color: rgba(253, 253, 253, 0.15);">
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-lg-6 col-xl-6">
+                                                                <h5>My hero Academia tomo 7</h5>
+                                                                <div class="d-flex flex-row">
+                                                                    <div class="text-danger mb-1 me-2">
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                    </div>
+                                                                    <span>20 unidades</span>
+                                                                </div>
+                                                                <div class="mt-1 mb-0 text-muted small">
+                                                                    <span>MANGA</span>
+                                                                    <span class="text-primary"> • </span>
+                                                                    <span>My Hero Academia</span>
+                                                                    <!-- <span class="text-primary"> • </span> -->
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
+                                                                <div class="d-flex flex-row align-items-center mb-1">
+                                                                    <h4 class="mb-1 me-1">$12.990</h4>
+                                                                </div>
+                                                                <div class="d-flex flex-column mt-4">
+                                                                    <a href="#modalEditarProducto"
+                                                                        class="btn btn-primary btn-sm"
+                                                                        type="button">Editar</a>
+                                                                    <a href="#modalEliminado" class="btn btn-danger btn-sm mt-2"
+                                                                        type="a">
+                                                                        Eliminar
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row justify-content-center mb-3">
+                                            <div class="col-md-12 col-xl-10">
+                                                <div class="card shadow-0 border rounded-3">
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                                                                <div
+                                                                    class="bg-image hover-zoom ripple rounded ripple-surface">
+                                                                    <img src="./assets/productos/cosplay/3f3c2646-a0ee-4002-b5e3-cb483ae5a458.png"
+                                                                        class="productoMini" />
+                                                                    <a href="#!">
+                                                                        <div class="hover-overlay">
+                                                                            <div class="mask"
+                                                                                style="background-color: rgba(253, 253, 253, 0.15);">
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-lg-6 col-xl-6">
+                                                                <h5>Niña</h5>
+                                                                <div class="d-flex flex-row">
+                                                                    <div class="text-danger mb-1 me-2">
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                    </div>
+                                                                    <span>15 unidades</span>
+                                                                </div>
+                                                                <div class="mt-1 mb-0 text-muted small">
+                                                                    <span>COSPLAY</span>
+                                                                    <span class="text-primary"> • </span>
+                                                                    <span>Dragon Ball</span>
+                                                                    <!-- <span class="text-primary"> • </span> -->
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
+                                                                <div class="d-flex flex-row align-items-center mb-1">
+                                                                    <h4 class="mb-1 me-1">$12.990</h4>
+                                                                </div>
+                                                                <div class="d-flex flex-column mt-4">
+                                                                    <a href="#modalEditarProducto"
+                                                                        class="btn btn-primary btn-sm"
+                                                                        type="button">Editar</a>
+                                                                    <a href="#modalEliminado" class="btn btn-danger btn-sm mt-2"
+                                                                        type="a">
+                                                                        Eliminar
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row justify-content-center mb-3">
+                                            <div class="col-md-12 col-xl-10">
+                                                <div class="card shadow-0 border rounded-3">
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                                                                <div
+                                                                    class="bg-image hover-zoom ripple rounded ripple-surface">
+                                                                    <img src="./assets/productos/figuras/17047-DragonBallZ-CreatorxCreator-Shenron-_ver.A_-Repeat-1_1345x1943_73a53348-9b5f-41d2-83d4-6d3687c7e2df_480x480.webp"
+                                                                        class="productoMini" />
+                                                                    <a href="#!">
+                                                                        <div class="hover-overlay">
+                                                                            <div class="mask"
+                                                                                style="background-color: rgba(253, 253, 253, 0.15);">
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-lg-6 col-xl-6">
+                                                                <h5>Banpresto - Shenron Dragon Ball 40 cm</h5>
+                                                                <div class="d-flex flex-row">
+                                                                    <div class="text-danger mb-1 me-2">
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                    </div>
+                                                                    <span>15 unidades</span>
+                                                                </div>
+                                                                <div class="mt-1 mb-0 text-muted small">
+                                                                    <span>FIGURA</span>
+                                                                    <span class="text-primary"> • </span>
+                                                                    <span>Dragon Ball</span>
+                                                                    <!-- <span class="text-primary"> • </span> -->
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
+                                                                <div class="d-flex flex-row align-items-center mb-1">
+                                                                    <h4 class="mb-1 me-1">$47.990</h4>
+                                                                </div>
+                                                                <div class="d-flex flex-column mt-4">
+                                                                    <a href="#modalEditarProducto"
+                                                                        class="btn btn-primary btn-sm"
+                                                                        type="button">Editar</a>
+                                                                    <a href="#modalEliminado" class="btn btn-danger btn-sm mt-2"
+                                                                        type="a">
+                                                                        Eliminar
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row justify-content-center mb-3">
+                                            <div class="col-md-12 col-xl-10">
+                                                <div class="card shadow-0 border rounded-3">
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                                                                <div
+                                                                    class="bg-image hover-zoom ripple rounded ripple-surface">
+                                                                    <img src="./assets/productos/mangas/the-promised-neverland-portada-003.webp"
+                                                                        class="productoMini" />
+                                                                    <a href="#!">
+                                                                        <div class="hover-overlay">
+                                                                            <div class="mask"
+                                                                                style="background-color: rgba(253, 253, 253, 0.15);">
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-lg-6 col-xl-6">
+                                                                <h5>The promised nerverland tomo 1</h5>
+                                                                <div class="d-flex flex-row">
+                                                                    <div class="text-danger mb-1 me-2">
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                    </div>
+                                                                    <span>15 unidades</span>
+                                                                </div>
+                                                                <div class="mt-1 mb-0 text-muted small">
+                                                                    <span>MANGA</span>
+                                                                    <span class="text-primary"> • </span>
+                                                                    <span>The Promised Neverland</span>
+                                                                    <!-- <span class="text-primary"> • </span> -->
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
+                                                                <div class="d-flex flex-row align-items-center mb-1">
+                                                                    <h4 class="mb-1 me-1">$12.990</h4>
+                                                                </div>
+                                                                <div class="d-flex flex-column mt-4">
+                                                                    <a href="#modalEditarProducto"
+                                                                        class="btn btn-primary btn-sm"
+                                                                        type="button">Editar</a>
+                                                                    <a href="#modalEliminado" class="btn btn-danger btn-sm mt-2"
+                                                                        type="a">
+                                                                        Eliminar
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row justify-content-center mb-3">
+                                            <div class="col-md-12 col-xl-10">
+                                                <div class="card shadow-0 border rounded-3">
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                                                                <div
+                                                                    class="bg-image hover-zoom ripple rounded ripple-surface">
+                                                                    <img src="./assets/productos/funkos/42935_MHA_momo_WEB.png"
+                                                                        class="productoMini" />
+                                                                    <a href="#!">
+                                                                        <div class="hover-overlay">
+                                                                            <div class="mask"
+                                                                                style="background-color: rgba(253, 253, 253, 0.15);">
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-lg-6 col-xl-6">
+                                                                <h5>Funko pop - Momo</h5>
+                                                                <div class="d-flex flex-row">
+                                                                    <div class="text-danger mb-1 me-2">
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                    </div>
+                                                                    <span>15 unidades</span>
+                                                                </div>
+                                                                <div class="mt-1 mb-0 text-muted small">
+                                                                    <span>FUNKO</span>
+                                                                    <span class="text-primary"> • </span>
+                                                                    <span>My Hero Academia</span>
+                                                                    <!-- <span class="text-primary"> • </span> -->
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
+                                                                <div class="d-flex flex-row align-items-center mb-1">
+                                                                    <h4 class="mb-1 me-1">$10.990</h4>
+                                                                </div>
+                                                                <div class="d-flex flex-column mt-4">
+                                                                    <a href="#modalEditarProducto"
+                                                                        class="btn btn-primary btn-sm"
+                                                                        type="button">Editar</a>
+                                                                    <a href="#modalEliminado" class="btn btn-danger btn-sm mt-2"
+                                                                        type="a">
+                                                                        Eliminar
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row justify-content-center mb-3">
+                                            <div class="col-md-12 col-xl-10">
+                                                <div class="card shadow-0 border rounded-3">
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                                                                <div
+                                                                    class="bg-image hover-zoom ripple rounded ripple-surface">
+                                                                    <img src="./assets/productos/funkos/42937_MHA_Eijiro_WEB.png"
+                                                                        class="productoMini" />
+                                                                    <a href="#!">
+                                                                        <div class="hover-overlay">
+                                                                            <div class="mask"
+                                                                                style="background-color: rgba(253, 253, 253, 0.15);">
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-lg-6 col-xl-6">
+                                                                <h5>Funko pop - Red Riot</h5>
+                                                                <div class="d-flex flex-row">
+                                                                    <div class="text-danger mb-1 me-2">
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                    </div>
+                                                                    <span>15 unidades</span>
+                                                                </div>
+                                                                <div class="mt-1 mb-0 text-muted small">
+                                                                    <span>FUNKO</span>
+                                                                    <span class="text-primary"> • </span>
+                                                                    <span>My Hero Academia</span>
+                                                                    <!-- <span class="text-primary"> • </span> -->
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
+                                                                <div class="d-flex flex-row align-items-center mb-1">
+                                                                    <h4 class="mb-1 me-1">$12.990</h4>
+                                                                </div>
+                                                                <div class="d-flex flex-column mt-4">
+                                                                    <a href="#modalEditarProducto"
+                                                                        class="btn btn-primary btn-sm"
+                                                                        type="button">Editar</a>
+                                                                    <a href="#modalEliminado" class="btn btn-danger btn-sm mt-2"
+                                                                        type="a">
+                                                                        Eliminar
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row justify-content-center mb-3">
+                                            <div class="col-md-12 col-xl-10">
+                                                <div class="card shadow-0 border rounded-3">
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                                                                <div
+                                                                    class="bg-image hover-zoom ripple rounded ripple-surface">
+                                                                    <img src="./assets/productos/figuras/Figura-de-Anime-GSC-PUP-Attack-on-Titan-15cm-Eren-Yeager-Shingeki-No-Kyojin-Attack-Titan.png_640x640.png"
+                                                                        class="productoMini" />
+                                                                    <a href="#!">
+                                                                        <div class="hover-overlay">
+                                                                            <div class="mask"
+                                                                                style="background-color: rgba(253, 253, 253, 0.15);">
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-lg-6 col-xl-6">
+                                                                <h5>Banpresto - Eren Titán 30cm</h5>
+                                                                <div class="d-flex flex-row">
+                                                                    <div class="text-danger mb-1 me-2">
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                    </div>
+                                                                    <span>15 unidades</span>
+                                                                </div>
+                                                                <div class="mt-1 mb-0 text-muted small">
+                                                                    <span>FIGURA</span>
+                                                                    <span class="text-primary"> • </span>
+                                                                    <span>Attack On Titan</span>
+                                                                    <!-- <span class="text-primary"> • </span> -->
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
+                                                                <div class="d-flex flex-row align-items-center mb-1">
+                                                                    <h4 class="mb-1 me-1">$32.990</h4>
+                                                                </div>
+                                                                <div class="d-flex flex-column mt-4">
+                                                                    <a href="#modalEditarProducto"
+                                                                        class="btn btn-primary btn-sm"
+                                                                        type="button">Editar</a>
+                                                                    <a href="#modalEliminado" class="btn btn-danger btn-sm mt-2"
+                                                                        type="a">
+                                                                        Eliminar
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row justify-content-center mb-3">
+                                            <div class="col-md-12 col-xl-10">
+                                                <div class="card shadow-0 border rounded-3">
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                                                                <div
+                                                                    class="bg-image hover-zoom ripple rounded ripple-surface">
+                                                                    <img src="./assets/productos/mangas/killing-stalking-n-2-de-4.webp"
+                                                                        class="productoMini" />
+                                                                    <a href="#!">
+                                                                        <div class="hover-overlay">
+                                                                            <div class="mask"
+                                                                                style="background-color: rgba(253, 253, 253, 0.15);">
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-lg-6 col-xl-6">
+                                                                <h5>Killing Stalking tomo 2</h5>
+                                                                <div class="d-flex flex-row">
+                                                                    <div class="text-danger mb-1 me-2">
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                    </div>
+                                                                    <span>15 unidades</span>
+                                                                </div>
+                                                                <div class="mt-1 mb-0 text-muted small">
+                                                                    <span>MANGA</span>
+                                                                    <span class="text-primary"> • </span>
+                                                                    <span>Killing Stalking</span>
+                                                                    <!-- <span class="text-primary"> • </span> -->
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
+                                                                <div class="d-flex flex-row align-items-center mb-1">
+                                                                    <h4 class="mb-1 me-1">$12.990</h4>
+                                                                </div>
+                                                                <div class="d-flex flex-column mt-4">
+                                                                    <a href="#modalEditarProducto"
+                                                                        class="btn btn-primary btn-sm"
+                                                                        type="button">Editar</a>
+                                                                    <a href="#modalEliminado" class="btn btn-danger btn-sm mt-2"
+                                                                        type="a">
+                                                                        Eliminar
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row justify-content-center mb-3">
+                                            <div class="col-md-12 col-xl-10">
+                                                <div class="card shadow-0 border rounded-3">
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                                                                <div
+                                                                    class="bg-image hover-zoom ripple rounded ripple-surface">
+                                                                    <img src="./assets/productos/funkos/46627_Naruto_Gaara_POP_GLAM-WEB-b004e74c0d443236b22ff4b59e094f46.png"
+                                                                        class="productoMini" />
+                                                                    <a href="#!">
+                                                                        <div class="hover-overlay">
+                                                                            <div class="mask"
+                                                                                style="background-color: rgba(253, 253, 253, 0.15);">
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-lg-6 col-xl-6">
+                                                                <h5>Funko pop - Gaara</h5>
+                                                                <div class="d-flex flex-row">
+                                                                    <div class="text-danger mb-1 me-2">
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                    </div>
+                                                                    <span>15 unidades</span>
+                                                                </div>
+                                                                <div class="mt-1 mb-0 text-muted small">
+                                                                    <span>FUNKO</span>
+                                                                    <span class="text-primary"> • </span>
+                                                                    <span>Naruto</span>
+                                                                    <!-- <span class="text-primary"> • </span> -->
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
+                                                                <div class="d-flex flex-row align-items-center mb-1">
+                                                                    <h4 class="mb-1 me-1">$15.990</h4>
+                                                                </div>
+                                                                <div class="d-flex flex-column mt-4">
+                                                                    <a href="#modalEditarProducto"
+                                                                        class="btn btn-primary btn-sm"
+                                                                        type="button">Editar</a>
+                                                                    <a href="#modalEliminado" class="btn btn-danger btn-sm mt-2"
+                                                                        type="a">
+                                                                        Eliminar
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row justify-content-center mb-3">
+                                            <div class="col-md-12 col-xl-10">
+                                                <div class="card shadow-0 border rounded-3">
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                                                                <div
+                                                                    class="bg-image hover-zoom ripple rounded ripple-surface">
+                                                                    <img src="./assets/productos/funkos/58035_MHA_DekuGloves_POP_GLAM-WEB.png"
+                                                                        class="productoMini" />
+                                                                    <a href="#!">
+                                                                        <div class="hover-overlay">
+                                                                            <div class="mask"
+                                                                                style="background-color: rgba(253, 253, 253, 0.15);">
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-lg-6 col-xl-6">
+                                                                <h5>Funko pop - Deku versión 7</h5>
+                                                                <div class="d-flex flex-row">
+                                                                    <div class="text-danger mb-1 me-2">
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                    </div>
+                                                                    <span>15 unidades</span>
+                                                                </div>
+                                                                <div class="mt-1 mb-0 text-muted small">
+                                                                    <span>FUNKO</span>
+                                                                    <span class="text-primary"> • </span>
+                                                                    <span>My Hero Academia</span>
+                                                                    <!-- <span class="text-primary"> • </span> -->
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
+                                                                <div class="d-flex flex-row align-items-center mb-1">
+                                                                    <h4 class="mb-1 me-1">$17.990</h4>
+                                                                </div>
+                                                                <div class="d-flex flex-column mt-4">
+                                                                    <a href="#modalEditarProducto"
+                                                                        class="btn btn-primary btn-sm"
+                                                                        type="button">Editar</a>
+                                                                    <a href="#modalEliminado" class="btn btn-danger btn-sm mt-2"
+                                                                        type="a">
+                                                                        Eliminar
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row justify-content-center mb-3">
+                                            <div class="col-md-12 col-xl-10">
+                                                <div class="card shadow-0 border rounded-3">
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                                                                <div
+                                                                    class="bg-image hover-zoom ripple rounded ripple-surface">
+                                                                    <img src="./assets/productos/figuras/figura-shoyo-hinata-haikyu-pop-up-parade.png"
+                                                                        class="productoMini" />
+                                                                    <a href="#!">
+                                                                        <div class="hover-overlay">
+                                                                            <div class="mask"
+                                                                                style="background-color: rgba(253, 253, 253, 0.15);">
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-lg-6 col-xl-6">
+                                                                <h5>Banpresto - Haikyu Hinata Shoyo 30cm</h5>
+                                                                <div class="d-flex flex-row">
+                                                                    <div class="text-danger mb-1 me-2">
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                    </div>
+                                                                    <span>15 unidades</span>
+                                                                </div>
+                                                                <div class="mt-1 mb-0 text-muted small">
+                                                                    <span>FIGURA</span>
+                                                                    <span class="text-primary"> • </span>
+                                                                    <span>Haikyū!!</span>
+                                                                    <!-- <span class="text-primary"> • </span> -->
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
+                                                                <div class="d-flex flex-row align-items-center mb-1">
+                                                                    <h4 class="mb-1 me-1">$35.990</h4>
+                                                                </div>
+                                                                <div class="d-flex flex-column mt-4">
+                                                                    <a href="#modalEditarProducto"
+                                                                        class="btn btn-primary btn-sm"
+                                                                        type="button">Editar</a>
+                                                                    <a href="#modalEliminado" class="btn btn-danger btn-sm mt-2"
+                                                                        type="a">
+                                                                        Eliminar
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row justify-content-center mb-3">
+                                            <div class="col-md-12 col-xl-10">
+                                                <div class="card shadow-0 border rounded-3">
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                                                                <div
+                                                                    class="bg-image hover-zoom ripple rounded ripple-surface">
+                                                                    <img src="./assets/productos/figuras/Figuras-de-acci-n-de-Demon-Slayer-No-Yaiba-Kimetsu-juguetes-de-PVC-regalos.jpg_640x640.png"
+                                                                        class="productoMini" />
+                                                                    <a href="#!">
+                                                                        <div class="hover-overlay">
+                                                                            <div class="mask"
+                                                                                style="background-color: rgba(253, 253, 253, 0.15);">
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-lg-6 col-xl-6">
+                                                                <h5>Bandai - Zenitsu Kimetsu No Yaiba 20cm</h5>
+                                                                <div class="d-flex flex-row">
+                                                                    <div class="text-danger mb-1 me-2">
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                    </div>
+                                                                    <span>15 unidades</span>
+                                                                </div>
+                                                                <div class="mt-1 mb-0 text-muted small">
+                                                                    <span>FIGURA</span>
+                                                                    <span class="text-primary"> • </span>
+                                                                    <span>Kimetsu No Yaiba</span>
+                                                                    <!-- <span class="text-primary"> • </span> -->
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
+                                                                <div class="d-flex flex-row align-items-center mb-1">
+                                                                    <h4 class="mb-1 me-1">$12.990</h4>
+                                                                </div>
+                                                                <div class="d-flex flex-column mt-4">
+                                                                    <a href="#modalEditarProducto"
+                                                                        class="btn btn-primary btn-sm"
+                                                                        type="button">Editar</a>
+                                                                    <a href="#modalEliminado" class="btn btn-danger btn-sm mt-2"
+                                                                        type="a">
+                                                                        Eliminar
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row justify-content-center mb-3">
+                                            <div class="col-md-12 col-xl-10">
+                                                <div class="card shadow-0 border rounded-3">
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                                                                <div
+                                                                    class="bg-image hover-zoom ripple rounded ripple-surface">
+                                                                    <img src="./assets/productos/cosplay/En-directo-Live-mostrar-UWOWO-Anime-destino-Gran-Orden-Matthew-Cosplay-traje-de-las-mujeres-vestido.png"
+                                                                        class="productoMini" />
+                                                                    <a href="#!">
+                                                                        <div class="hover-overlay">
+                                                                            <div class="mask"
+                                                                                style="background-color: rgba(253, 253, 253, 0.15);">
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-lg-6 col-xl-6">
+                                                                <h5>Niña</h5>
+                                                                <div class="d-flex flex-row">
+                                                                    <div class="text-danger mb-1 me-2">
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                    </div>
+                                                                    <span>15 unidades</span>
+                                                                </div>
+                                                                <div class="mt-1 mb-0 text-muted small">
+                                                                    <span>COSPLAY</span>
+                                                                    <span class="text-primary"> • </span>
+                                                                    <span>Maid</span>
+                                                                    <!-- <span class="text-primary"> • </span> -->
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
+                                                                <div class="d-flex flex-row align-items-center mb-1">
+                                                                    <h4 class="mb-1 me-1">$12.990</h4>
+                                                                </div>
+                                                                <div class="d-flex flex-column mt-4">
+                                                                    <a href="#modalEditarProducto"
+                                                                        class="btn btn-primary btn-sm"
+                                                                        type="button">Editar</a>
+                                                                    <a href="#modalEliminado" class="btn btn-danger btn-sm mt-2"
+                                                                        type="a">
+                                                                        Eliminar
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row justify-content-center mb-3">
+                                            <div class="col-md-12 col-xl-10">
+                                                <div class="card shadow-0 border rounded-3">
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                                                                <div
+                                                                    class="bg-image hover-zoom ripple rounded ripple-surface">
+                                                                    <img src="./assets/productos/figuras/figure-baki-hanma-baki-pop-up-parade.png"
+                                                                        class="productoMini" />
+                                                                    <a href="#!">
+                                                                        <div class="hover-overlay">
+                                                                            <div class="mask"
+                                                                                style="background-color: rgba(253, 253, 253, 0.15);">
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-lg-6 col-xl-6">
+                                                                <h5>Banpresto - Baki Hanma 30cm</h5>
+                                                                <div class="d-flex flex-row">
+                                                                    <div class="text-danger mb-1 me-2">
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                    </div>
+                                                                    <span>15 unidades</span>
+                                                                </div>
+                                                                <div class="mt-1 mb-0 text-muted small">
+                                                                    <span>FIGURA</span>
+                                                                    <span class="text-primary"> • </span>
+                                                                    <span>Baki the Grappler</span>
+                                                                    <!-- <span class="text-primary"> • </span> -->
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
+                                                                <div class="d-flex flex-row align-items-center mb-1">
+                                                                    <h4 class="mb-1 me-1">$12.990</h4>
+                                                                </div>
+                                                                <div class="d-flex flex-column mt-4">
+                                                                    <a href="#modalEditarProducto"
+                                                                        class="btn btn-primary btn-sm"
+                                                                        type="button">Editar</a>
+                                                                    <a href="#modalEliminado" class="btn btn-danger btn-sm mt-2"
+                                                                        type="a">
+                                                                        Eliminar
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row justify-content-center mb-3">
+                                            <div class="col-md-12 col-xl-10">
+                                                <div class="card shadow-0 border rounded-3">
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                                                                <div
+                                                                    class="bg-image hover-zoom ripple rounded ripple-surface">
+                                                                    <img src="./assets/productos/figuras/LuffyRender_011.png"
+                                                                        class="productoMini" />
+                                                                    <a href="#!">
+                                                                        <div class="hover-overlay">
+                                                                            <div class="mask"
+                                                                                style="background-color: rgba(253, 253, 253, 0.15);">
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-lg-6 col-xl-6">
+                                                                <h5>Banpresto - One Piece Luffy 80cm</h5>
+                                                                <div class="d-flex flex-row">
+                                                                    <div class="text-danger mb-1 me-2">
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                    </div>
+                                                                    <span>15 unidades</span>
+                                                                </div>
+                                                                <div class="mt-1 mb-0 text-muted small">
+                                                                    <span>FIGURA</span>
+                                                                    <span class="text-primary"> • </span>
+                                                                    <span>One Piece</span>
+                                                                    <!-- <span class="text-primary"> • </span> -->
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
+                                                                <div class="d-flex flex-row align-items-center mb-1">
+                                                                    <h4 class="mb-1 me-1">$122.990</h4>
+                                                                </div>
+                                                                <div class="d-flex flex-column mt-4">
+                                                                    <a href="#modalEditarProducto"
+                                                                        class="btn btn-primary btn-sm"
+                                                                        type="button">Editar</a>
+                                                                    <a href="#modalEliminado" class="btn btn-danger btn-sm mt-2"
+                                                                        type="a">
+                                                                        Eliminar
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row justify-content-center mb-3">
+                                            <div class="col-md-12 col-xl-10">
+                                                <div class="card shadow-0 border rounded-3">
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                                                                <div
+                                                                    class="bg-image hover-zoom ripple rounded ripple-surface">
+                                                                    <img src="./assets/productos/figuras/Hurry-Flying-Nimbus-son-goku-430x430.png"
+                                                                        class="productoMini" />
+                                                                    <a href="#!">
+                                                                        <div class="hover-overlay">
+                                                                            <div class="mask"
+                                                                                style="background-color: rgba(253, 253, 253, 0.15);">
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-lg-6 col-xl-6">
+                                                                <h5>Goku nube voladora</h5>
+                                                                <div class="d-flex flex-row">
+                                                                    <div class="text-danger mb-1 me-2">
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                    </div>
+                                                                    <span>15 unidades</span>
+                                                                </div>
+                                                                <div class="mt-1 mb-0 text-muted small">
+                                                                    <span>FIGURA</span>
+                                                                    <span class="text-primary"> • </span>
+                                                                    <span>Dragon Ball</span>
+                                                                    <!-- <span class="text-primary"> • </span> -->
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
+                                                                <div class="d-flex flex-row align-items-center mb-1">
+                                                                    <h4 class="mb-1 me-1">$12.990</h4>
+                                                                </div>
+                                                                <div class="d-flex flex-column mt-4">
+                                                                    <a href="#modalEditarProducto"
+                                                                        class="btn btn-primary btn-sm"
+                                                                        type="button">Editar</a>
+                                                                    <a href="#modalEliminado" class="btn btn-danger btn-sm mt-2"
+                                                                        type="a">
+                                                                        Eliminar
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row justify-content-center mb-3">
+                                            <div class="col-md-12 col-xl-10">
+                                                <div class="card shadow-0 border rounded-3">
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                                                                <div
+                                                                    class="bg-image hover-zoom ripple rounded ripple-surface">
+                                                                    <img src="./assets/productos/cosplay/d5etx70-a620ca3a-8bb9-4e9d-b45d-daefece99464.png"
+                                                                        class="productoMini" />
+                                                                    <a href="#!">
+                                                                        <div class="hover-overlay">
+                                                                            <div class="mask"
+                                                                                style="background-color: rgba(253, 253, 253, 0.15);">
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-lg-6 col-xl-6">
+                                                                <h5>Niña</h5>
+                                                                <div class="d-flex flex-row">
+                                                                    <div class="text-danger mb-1 me-2">
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                    </div>
+                                                                    <span>15 unidades</span>
+                                                                </div>
+                                                                <div class="mt-1 mb-0 text-muted small">
+                                                                    <span>COSPLAY</span>
+                                                                    <span class="text-primary"> • </span>
+                                                                    <span>Naruto</span>
+                                                                    <!-- <span class="text-primary"> • </span> -->
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
+                                                                <div class="d-flex flex-row align-items-center mb-1">
+                                                                    <h4 class="mb-1 me-1">$12.990</h4>
+                                                                </div>
+                                                                <div class="d-flex flex-column mt-4">
+                                                                    <a href="#modalEditarProducto"
+                                                                        class="btn btn-primary btn-sm"
+                                                                        type="button">Editar</a>
+                                                                    <a href="#modalEliminado" class="btn btn-danger btn-sm mt-2"
+                                                                        type="a">
+                                                                        Eliminar
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row justify-content-center mb-3">
+                                            <div class="col-md-12 col-xl-10">
+                                                <div class="card shadow-0 border rounded-3">
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                                                                <div
+                                                                    class="bg-image hover-zoom ripple rounded ripple-surface">
+                                                                    <img src="./assets/productos/cosplay/Disfraz-de-Anime-Black-Butler-para-hombre-y-mujer-traje-de-uniforme-negro-con-broche-para.webp"
+                                                                        class="productoMini" />
+                                                                    <a href="#!">
+                                                                        <div class="hover-overlay">
+                                                                            <div class="mask"
+                                                                                style="background-color: rgba(253, 253, 253, 0.15);">
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-lg-6 col-xl-6">
+                                                                <h5>Niño</h5>
+                                                                <div class="d-flex flex-row">
+                                                                    <div class="text-danger mb-1 me-2">
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                    </div>
+                                                                    <span>15 unidades</span>
+                                                                </div>
+                                                                <div class="mt-1 mb-0 text-muted small">
+                                                                    <span>COSPLAY</span>
+                                                                    <span class="text-primary"> • </span>
+                                                                    <span>One Piece</span>
+                                                                    <!-- <span class="text-primary"> • </span> -->
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
+                                                                <div class="d-flex flex-row align-items-center mb-1">
+                                                                    <h4 class="mb-1 me-1">$12.990</h4>
+                                                                </div>
+                                                                <div class="d-flex flex-column mt-4">
+                                                                    <a href="#modalEditarProducto"
+                                                                        class="btn btn-primary btn-sm"
+                                                                        type="button">Editar</a>
+                                                                    <a href="#modalEliminado" class="btn btn-danger btn-sm mt-2"
+                                                                        type="a">
+                                                                        Eliminar
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row justify-content-center mb-3">
+                                            <div class="col-md-12 col-xl-10">
+                                                <div class="card shadow-0 border rounded-3">
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                                                                <div
+                                                                    class="bg-image hover-zoom ripple rounded ripple-surface">
+                                                                    <img src="./assets/productos/mangas/144071_520x520.png"
+                                                                        class="productoMini" />
+                                                                    <a href="#!">
+                                                                        <div class="hover-overlay">
+                                                                            <div class="mask"
+                                                                                style="background-color: rgba(253, 253, 253, 0.15);">
+                                                                            </div>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-lg-6 col-xl-6">
+                                                                <h5>Naruto tomo 1</h5>
+                                                                <div class="d-flex flex-row">
+                                                                    <div class="text-danger mb-1 me-2">
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                        <i class="fa fa-star"></i>
+                                                                    </div>
+                                                                    <span>15 unidades</span>
+                                                                </div>
+                                                                <div class="mt-1 mb-0 text-muted small">
+                                                                    <span>MANGA</span>
+                                                                    <span class="text-primary"> • </span>
+                                                                    <span>Naruto</span>
+                                                                    <!-- <span class="text-primary"> • </span> -->
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
+                                                                <div class="d-flex flex-row align-items-center mb-1">
+                                                                    <h4 class="mb-1 me-1">$12.990</h4>
+                                                                </div>
+                                                                <div class="d-flex flex-column mt-4">
+                                                                    <a href="#modalEditarProducto"
+                                                                        class="btn btn-primary btn-sm"
+                                                                        type="button">Editar</a>
+                                                                    <a href="#modalEliminado" class="btn btn-danger btn-sm mt-2"
+                                                                        type="a">
+                                                                        Eliminar
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    </section>
+</body>
+
+</html>
+
+<div id="modalCrearProducto" class="modalDialog py-5">
+    <div>
+        <a href="#close" title="Close" class="close">X</a>
+        <!-- <section class=" h-custom"
+          style="background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%); height:fit-content"> -->
+        <!-- <div class="container py-5 h-100"> -->
+        <!-- <div class="row d-flex justify-content-center align-items-center h-100"> -->
+        <!-- <div class="col-12"> -->
+        <!-- <div class="card card-registration card-registration-2" style="border-radius: 15px;"> -->
+        <!-- <div class="card-body p-0"> -->
+        <div class="row g-0">
+            <div class="col-lg-12">
+                <div class="p-5">
+                    <div id="contenedor">
+                        <div id="contenido">
+                            <h1>Crear producto</h1>
+                            <form>
+                                <div class="form-group">
+                                    <label for="exampleFormControlInput1">Nombre del producto</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="Nombre del producto">
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1">Tipo de producto</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                        <option>Seleccione...</option>
+                                        <option>MANGA</option>
+                                        <option>FUNKO</option>
+                                        <option>FIGURA</option>
+                                        <option>COSPLAY</option>
+                                        <option>OTRO</option>
+                                    </select>
+                                </div>
+                                <br>
+
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1">Universo</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                        <option>Seleccione...</option>
+                                        <option>Naruto</option>
+                                        <option>My Hero Academia</option>
+                                        <option>Attack on Titan</option>
+                                        <option>Kimetsu no Yaiba</option>
+                                        <option>Maid</option>
+                                        <option>Dragon Ball</option>
+                                        <option>Yu-Gi-Oh!</option>
+                                        <option>Mitos y Leyendas</option>
+                                        <option>Magic</option>
+                                        <option>Otro</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Descripción</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Precio (CLP)</label>
+                                    <input type="int" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="Precio">
+                                </div>
+                                <br>
+                                <label for="">Stock</label>
+                                <input type="number" name="" id="">
+                                <br>
+                                <br>
+                                <div class="form-group">
+                                    <label for="exampleFormControlFile1">Imagen</label>
+                                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                </div>
+                                <br>
+                                <br>
+                                <div style="display: flex; justify-content: space-evenly">
+                                    <a type="button" class="btn btn-primary" href="#close">Crear producto</a>
+                                    <a type="button" class="btn btn-disabled" href="#close">Cancelar</a>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </section> -->
+    </div>
+</div>
+
+<div id="modalEditarProducto" class="modalDialog py-5">
+    <div>
+        <a href="#close" title="Close" class="close">X</a>
+        <div class="col-lg-12">
+            <div class="p-5">
+                <div id="contenedor">
+                    <div id="contenido">
+                        <h1>Editar producto</h1>
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Nombre del producto</label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Nombre del producto">
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Tipo de producto</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>Seleccione...</option>
+                                    <option>MANGA</option>
+                                    <option>FUNKO</option>
+                                    <option>FIGURA</option>
+                                    <option>COSPLAY</option>
+                                    <option>OTRO</option>
+                                </select>
+                            </div>
+                            <br>
+
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Universo</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>Seleccione...</option>
+                                    <option>Naruto</option>
+                                    <option>My Hero Academia</option>
+                                    <option>Attack on Titan</option>
+                                    <option>Kimetsu no Yaiba</option>
+                                    <option>Maid</option>
+                                    <option>Dragon Ball</option>
+                                    <option>Yu-Gi-Oh!</option>
+                                    <option>Mitos y Leyendas</option>
+                                    <option>Magic</option>
+                                    <option>Otro</option>
+                                </select>
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Descripción</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Precio (CLP)</label>
+                                <input type="int" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Precio">
+                            </div>
+                            <br>
+                            <label for="">Stock</label>
+                            <input type="number" name="" id="">
+                            <br>
+                            <br>
+                            <div class="form-group">
+                                <label for="exampleFormControlFile1">Imagen</label>
+                                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                            </div>
+                            <br>
+                            <br>
+                            <div style="display: flex; justify-content: space-evenly">
+                                <a type="button" class="btn btn-primary" href="#close">Editar producto</a>
+                                <a type="button" class="btn btn-disabled" href="#close">Cancelar</a>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modalEliminado" class="modalDialog py-5">
+    <div style="background-color: rgb(255, 255, 255);">
+        <a href="#close" title="Close" class="close">X</a>
+        <div class="col-lg-12">
+            <div class="p-5">
+                <div id="contenedor">
+                    <div id="contenido" style="text-align: center">
+                        <h2 style="color:rgb(0, 0, 0)">Producto Eliminado</h2>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

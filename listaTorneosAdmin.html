@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Administrar torneos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./styles/crearTorneo.css">
+</head>
+
+<header class="p-3 fixed-top text-bg-dark ">
+
+  <div class="d-flex align-items-center" id="nav">
+
+      <ul class="nav col-12 col-lg-auto me-lg-auto mb-2
+                  justify-content-center mb-md-0">
+          <li><a href="/index.html" class="nav-link px-2 text-white" id="letras1">Tienda Konishiwa</a></li>
+
+          <a href="/" class="d-flex align-items-center mb-2 mb-lg-0
+          text-dark text-decoration-none">
+              <img src="/assets/productos/otros/carita.png" alt="" class="cara" style="margin: auto">
+
+          </a>
+          <!-- <h6 style="margin:auto">Administrador</h6> -->
+
+          <li><a href="./listaProductosAdmin.html" class="nav-link px-2 " id="letras">ADMINISTRAR PRODUCTOS</a></li>
+          <li><a href="./listaTorneosAdmin.html" class="nav-link px-2 " id="letras">ADMINISTRAR TORNEOS</a></li>
+          <!-- <li><a href="/verProductos.html" class="nav-link
+              px-2 " id="letras">PRODUCTOS</a></li> -->
+
+      </ul>
+
+
+      <!-- <form action="" class="search-bar">
+          <input type="search" name="search" required autocomplete="on" placeholder="Buscar productos"
+              class="lupa">
+          <button class="searsh-button" type="submit">
+              <span>Buscar productos</span>
+          </button>
+      </form> -->
+
+      <div class="dropdown text-end" style="margin-right: 5%;">
+        
+
+          <a href="/loginAdmin.html" style="display: flex;">
+              <h6 style="text-decoration: none; color: white;">Administrador</h6>
+              <img src="/assets/productos/otros/User_icon_white.png" id="user" alt="">
+              <h6>Cerrar sesión</h6>
+          </a>
+
+          <!--            
+          <a href="/carritoCompra.html">
+
+              <img src="/assets/productos/otros/icon_carrito_de_compras_b.png" id="user" alt="">
+          </a> -->
+      </div>
+
+  </div>
+</header>
+
+<body style="padding-top: 50px;">
+  <section class=" h-custom"
+    style="background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%); height:fit-content">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12">
+          <div class="card card-registration card-registration-2" style="border-radius: 15px;">
+            <div class="card-body p-0">
+              <div class="row g-0">
+                <div class="col-lg-12">
+                  <div class="p-5">
+                    <div id="contenedor">
+                      <div id="contenido">
+                        <div style="display: flex; justify-content: space-between;">
+                          <h1>Administrar torneos</h1>
+
+                          <a href="#modalCrearTorneo" class="btn btn-success" type="button">
+                            <div style="display:inline;">
+                              <span style="font-size: 20px; margin:0; margin-bottom: 5;">+</span>
+                              <span>Agregar torneo</span>
+                            </div>
+
+
+                          </a>
+                        </div>
+                        <div class="row justify-content-center mb-3">
+                          <div class="col-md-12 col-xl-10">
+                            <div class="card shadow-0 border rounded-3">
+                              <div class="card-body">
+                                <div class="row">
+                                  <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                                    <div class="bg-image hover-zoom ripple rounded ripple-surface">
+                                      <img src="./assets/banners/pokemon-gcc.jpg" class="bannerMini" />
+                                      <a href="#!">
+                                        <div class="hover-overlay">
+                                          <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
+                                        </div>
+                                      </a>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-6 col-lg-6 col-xl-6">
+                                    <h5>Pokémon JCC Copa Hoenn</h5>
+                                    <div class="d-flex flex-row">
+                                      <div class="text-danger mb-1 me-2">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                      </div>
+                                      <span>14/11/2022</span>
+                                    </div>
+                                    <div class="mt-1 mb-0 text-muted small">
+                                      <span>1 jugador</span>
+                                      <span class="text-primary"> • </span>
+                                      <span>Juego de cartas</span>
+                                      <span class="text-primary"> • </span>
+                                      <span>+7<br /></span>
+                                    </div>
+                                    <div class="mb-2 text-muted small">
+                                      <span>20 inscritos</span>
+                                      <span></span>
+                                      <span><br /></span>
+                                    </div>
+                                    <p class="">
+                                      Participa y gana en el torneo. Grandes premios para los ganadores.
+                                    </p>
+                                    <p>Primer lugar: 1 paquete de vienesas</p>
+                                  </div>
+                                  <div class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
+                                    <div class="d-flex flex-row align-items-center mb-1">
+                                      <h4 class="mb-1 me-1">Inscripción gratis</h4>
+                                    </div>
+                                    <h6 class="text-success">Inscripciones abiertas</h6>
+                                    <div class="d-flex flex-column mt-4">
+                                      <a href="#modalEditarTorneo" class="btn btn-primary btn-sm"
+                                        type="button">Editar</a>
+                                      <a href="#modalEliminado" class="btn btn-danger btn-sm mt-2" type="a">
+                                        Eliminar
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row justify-content-center mb-3">
+                          <div class="col-md-12 col-xl-10">
+                            <div class="card shadow-0 border rounded-3">
+                              <div class="card-body">
+                                <div class="row">
+                                  <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                                    <div class="bg-image hover-zoom ripple rounded ripple-surface">
+                                      <img src="./assets/banners/lol.jpg" class="bannerMini" />
+                                      <a href="#!">
+                                        <div class="hover-overlay">
+                                          <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
+                                        </div>
+                                      </a>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-6 col-lg-6 col-xl-6">
+                                    <h5>Torneo League of Legends</h5>
+                                    <div class="d-flex flex-row">
+                                      <div class="text-danger mb-1 me-2">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                      </div>
+                                      <span>10/11/2022</span>
+                                    </div>
+                                    <div class="mt-1 mb-0 text-muted small">
+                                      <span>5 jugadores</span>
+                                      <span class="text-primary"> • </span>
+                                      <span>MOBA</span>
+                                      <span class="text-primary"> • </span>
+                                      <span>+12<br /></span>
+                                    </div>
+                                    <div class="mb-2 text-muted small">
+                                      <span>17 inscritos</span>
+                                      <!-- <span class="text-primary"> • </span> -->
+                                      <span></span>
+                                      <!-- <span class="text-primary"> • </span> -->
+                                      <span><br /></span>
+                                    </div>
+                                    <p class="">
+                                      Participa y gana en el torneo. Grandes premios para los ganadores.
+                                    </p>
+                                    <p>Primer lugar: 1 sopaipilla con ketchup</p>
+                                  </div>
+                                  <div class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
+                                    <div class="d-flex flex-row align-items-center mb-1">
+                                      <h4 class="mb-1 me-1">Inscripción: $1.000</h4>
+                                    </div>
+                                    <h6 class="text-success">Inscripciones abiertas</h6>
+                                    <div class="d-flex flex-column mt-4">
+                                      <a href="#modalEditarTorneo" class="btn btn-primary btn-sm"
+                                        type="button">Editar</a>
+                                      <a href="#modalEliminado" class="btn btn-danger btn-sm mt-2" type="a">
+                                        Eliminar
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row justify-content-center mb-3">
+                          <div class="col-md-12 col-xl-10">
+                            <div class="card shadow-0 border rounded-3">
+                              <div class="card-body">
+                                <div class="row">
+                                  <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                                    <div class="bg-image hover-zoom ripple rounded ripple-surface">
+                                      <img src="./assets/banners/pokemon-go.jpg" class="bannerMini" />
+                                      <a href="#!">
+                                        <div class="hover-overlay">
+                                          <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
+                                        </div>
+                                      </a>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-6 col-lg-6 col-xl-6">
+                                    <h5>Torneo Pokémon Go Copa Halloween</h5>
+                                    <div class="d-flex flex-row">
+                                      <div class="text-danger mb-1 me-2">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                      </div>
+                                      <span>31/10/2022</span>
+                                    </div>
+                                    <div class="mt-1 mb-0 text-muted small">
+                                      <span>1 jugador</span>
+                                      <span class="text-primary"> • </span>
+                                      <span>Móvil</span>
+                                      <span class="text-primary"> • </span>
+                                      <span>+10<br /></span>
+                                    </div>
+                                    <div class="mb-2 text-muted small">
+                                      <span>14 inscritos</span>
+                                      <!-- <span class="text-primary"> • </span> -->
+                                      <span></span>
+                                      <!-- <span class="text-primary"> • </span> -->
+                                      <span><br /></span>
+                                    </div>
+                                    <p class="">
+                                      Participa y gana en el torneo. Grandes premios para los ganadores.
+                                    </p>
+                                    <p>Primer lugar: 1 Pikachu</p>
+                                  </div>
+                                  <div class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
+                                    <div class="d-flex flex-row align-items-center mb-1">
+                                      <h4 class="mb-1 me-1">Inscripción gratis</h4>
+                                    </div>
+                                    <h6 class="text-danger">Inscripciones cerradas</h6>
+                                    <div class="d-flex flex-column mt-4">
+                                      <a href="#modalEditarTorneo" class="btn btn-primary btn-sm"
+                                        type="button">Editar</a>
+                                      <a href="#modalEliminado" class="btn btn-danger btn-sm mt-2" type="a">
+                                        Eliminar
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row justify-content-center mb-3">
+                          <div class="col-md-12 col-xl-10">
+                            <div class="card shadow-0 border rounded-3">
+                              <div class="card-body">
+                                <div class="row">
+                                  <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                                    <div class="bg-image hover-zoom ripple rounded ripple-surface">
+                                      <img src="./assets/banners/fifa.webp" class="bannerMini" />
+                                      <a href="#!">
+                                        <div class="hover-overlay">
+                                          <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
+                                        </div>
+                                      </a>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-6 col-lg-6 col-xl-6">
+                                    <h5>Torneo FIFA 23</h5>
+                                    <div class="d-flex flex-row">
+                                      <div class="text-danger mb-1 me-2">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                      </div>
+                                      <span>20/10/2022</span>
+                                    </div>
+                                    <div class="mt-1 mb-0 text-muted small">
+                                      <span>1 jugador</span>
+                                      <span class="text-primary"> • </span>
+                                      <span>Fútbol</span>
+                                      <span class="text-primary"> • </span>
+                                      <span>+10<br /></span>
+                                    </div>
+                                    <div class="mb-2 text-muted small">
+                                      <span>8 inscritos</span>
+                                      <!-- <span class="text-primary"> • </span> -->
+                                      <span></span>
+                                      <!-- <span class="text-primary"> • </span> -->
+                                      <span><br /></span>
+                                    </div>
+                                    <p class="">
+                                      Participa y gana en el torneo. Grandes premios para los ganadores.
+                                    </p>
+                                    <p>Primer lugar: 1 pelota</p>
+                                  </div>
+                                  <div class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
+                                    <div class="d-flex flex-row align-items-center mb-1">
+                                      <h4 class="mb-1 me-1">Inscripción: $2.000</h4>
+                                    </div>
+                                    <h6 class="text-danger">Inscripciones cerradas</h6>
+                                    <div class="d-flex flex-column mt-4">
+                                      <a href="#modalEditarTorneo" class="btn btn-primary btn-sm"
+                                        type="button">Editar</a>
+                                      <a href="#modalEliminado" class="btn btn-danger btn-sm mt-2" type="a">
+                                        Eliminar
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+  </div>
+
+</body>
+
+</html>
+
+<div id="modalCrearTorneo" class="modalDialog py-5">
+  <div>
+    <a href="#close" title="Close" class="close">X</a>
+    <!-- <section class=" h-custom"
+        style="background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%); height:fit-content"> -->
+    <!-- <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12">
+          <div class="card card-registration card-registration-2" style="border-radius: 15px;">
+            <div class="card-body p-0">
+              <div class="row g-0"> -->
+    <div class="col-lg-12">
+      <div class="p-5">
+        <div id="contenedor">
+          <div id="contenido">
+            <h1>Crear torneo</h1>
+            <form>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Nombre del torneo</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre del torneo">
+              </div>
+              <br>
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Tipo de torneo</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Cartas</option>
+                  <option>Nintendo</option>
+                  <option>MOBA</option>
+                  <option>Otro</option>
+                </select>
+              </div>
+              <br>
+
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Nombre del juego</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Pokémon JCC</option>
+                  <option>Yu-Gi-Oh!</option>
+                  <option>Mitos y Leyendas</option>
+                  <option>Magic</option>
+                  <option>Otro</option>
+                </select>
+              </div>
+              <br>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Descripción del
+                  torneo</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <br>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Premios</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <br>
+              <div class="torneosWrap">
+                <div>
+                  <label for="">Cierre de inscripciones</label>
+                  <input type="date" name="" id="">
+                </div>
+
+                <br>
+                <br>
+                <div>
+                  <label for="">Día y hora del torneo</label>
+                  <input type="date" name="" id="">
+                  <input type="time" name="" id="">
+                </div>
+
+                <br>
+                <br>
+
+                <div>
+                  <label for="">Jugadores por equipo</label>
+                  <input type="number" name="" id="">
+                </div>
+               
+                <br>
+                <br>
+
+                <div>
+                  <label for="">Edad mínima</label>
+                  <input type="number" name="" id="">
+                </div>
+                
+                <br>
+                <br>
+                <div class="form-group">
+                  <label for="exampleFormControlFile1">Banner</label>
+                  <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                </div>
+                <br>
+                <br>
+                <div class="custom-control custom-switch">
+                  <input type="checkbox" class="custom-control-input" id="customSwitches">
+                  <label class="custom-control-label" for="customSwitches">Inscripciones abiertas</label>
+                </div>
+              </div>
+
+              <div style="display: flex; justify-content: space-evenly">
+                <a type="button" class="btn btn-primary" href="#close">Crear torneo</a>
+                <a type="button" class="btn btn-disabled" href="#close">Cancelar</a>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- </section> -->
+  </div>
+</div>
+
+<div id="modalEditarTorneo" class="modalDialog py-5">
+  <div>
+    <a href="#close" title="Close" class="close">X</a>
+    <!-- <section class=" h-custom"
+        style="background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%); height:fit-content"> -->
+    <!-- <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12">
+          <div class="card card-registration card-registration-2" style="border-radius: 15px;">
+            <div class="card-body p-0">
+              <div class="row g-0"> -->
+    <div class="col-lg-12">
+      <div class="p-5">
+        <div id="contenedor">
+          <div id="contenido">
+            <h1>Editar torneo</h1>
+            <form>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Nombre del torneo</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre del torneo">
+              </div>
+              <br>
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Tipo de torneo</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Cartas</option>
+                  <option>Nintendo</option>
+                  <option>MOBA</option>
+                  <option>Otro</option>
+                </select>
+              </div>
+              <br>
+
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Nombre del juego</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Pokémon JCC</option>
+                  <option>Yu-Gi-Oh!</option>
+                  <option>Mitos y Leyendas</option>
+                  <option>Magic</option>
+                  <option>Otro</option>
+                </select>
+              </div>
+              <br>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Descripción del
+                  torneo</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <br>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Premios</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <br>
+              <div class="torneosWrap">
+                <div>
+                  <label for="">Cierre de inscripciones</label>
+                  <input type="date" name="" id="">
+                </div>
+
+                <br>
+                <br>
+                <div>
+                  <label for="">Día y hora del torneo</label>
+                  <input type="date" name="" id="">
+                  <input type="time" name="" id="">
+                </div>
+
+                <br>
+                <br>
+
+                <div>
+                  <label for="">Jugadores por equipo</label>
+                  <input type="number" name="" id="">
+                </div>
+               
+                <br>
+                <br>
+
+                <div>
+                  <label for="">Edad mínima</label>
+                  <input type="number" name="" id="">
+                </div>
+                
+                <br>
+                <br>
+                <div class="form-group">
+                  <label for="exampleFormControlFile1">Banner</label>
+                  <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                </div>
+                <br>
+                <br>
+                <div class="custom-control custom-switch">
+                  <input type="checkbox" class="custom-control-input" id="customSwitches">
+                  <label class="custom-control-label" for="customSwitches">Inscripciones abiertas</label>
+                </div>
+              </div>
+
+              <div style="display: flex; justify-content: space-evenly">
+                <a type="button" class="btn btn-primary" href="#close">Guardar cambios</a>
+                <a type="button" class="btn btn-disabled" href="#close">Cancelar</a>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- </section> -->
+  </div>
+</div>
+
+<div id="modalEliminado" class="modalDialog py-5">
+  <div style="background-color: rgb(255, 255, 255);">
+      <a href="#close" title="Close" class="close">X</a>
+      <div class="col-lg-12">
+          <div class="p-5">
+              <div id="contenedor">
+                  <div id="contenido" style="text-align: center">
+                      <h2 style="color:rgb(0, 0, 0)">Torneo Eliminado</h2>
+                      
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

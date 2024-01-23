@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Torneos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles/crearTorneo.css">
+</head>
+
+<header class="p-3 fixed-top text-bg-dark ">
+
+  <div class="d-flex align-items-center" id="nav">
+
+    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2
+                  justify-content-center mb-md-0">
+      <li><a href="/index.html" class="nav-link px-2 text-white" id="letras1">Tienda Konishiwa</a></li>
+      <a href="/" class="d-flex align-items-center mb-2 mb-lg-0
+          text-dark text-decoration-none">
+        <img src="/assets/productos/otros/carita.png" alt="" class="cara">
+      </a>
+
+      <li><a href="/verTorneos.html" class="nav-link px-2 " id="letras">EVENTOS</a></li>
+      <li><a href="/" class="nav-link px-2 " id="letras">CONTACTO</a></li>
+      <li><a href="/verProductos.html" class="nav-link
+              px-2 " id="letras">PRODUCTOS</a></li>
+
+    </ul>
+
+
+    <form action="" class="search-bar">
+      <input type="search" name="search" required autocomplete="on" placeholder="Buscar productos" class="lupa">
+      <button class="searsh-button" type="submit">
+        <span>Buscar productos</span>
+      </button>
+    </form>
+
+    <div class="dropdown text-end">
+
+      <a href="/loginAdmin.html">
+
+        <img src="/assets/productos/otros/User_icon_white.png" id="user" alt="">
+      </a>
+
+
+      <a href="/carritoCompra.html">
+
+        <img src="/assets/productos/otros/icon_carrito_de_compras_b.png" id="user" alt="">
+      </a>
+    </div>
+
+  </div>
+</header>
+
+
+<body style="margin-top: 50px;">
+  <section class=" h-custom"
+    style="background: linear-gradient(60deg, rgba(84, 58, 183, 1) 00, rgba(0, 172, 193, 1) 100%); height:fit-content">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12">
+          <did class="card card-registration card-registration-2" style="border-radius: 15px;">
+            <div class="card-body p-0">
+              <div class="row g-0">
+                <div class="col-lg-12">
+                  <div class="p-5">
+                    <div id="contenedor">
+                      <div id="contenido">
+                        <h1>Torneos</h1>
+                        <div class="row justify-content-center mb-3">
+                          <div class="col-md-12 col-xl-10">
+                            <div class="card shadow-0 border rounded-3">
+                              <div class="card-body">
+                                <div class="row">
+                                  <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                                    <div class="bg-image hover-zoom ripple rounded ripple-surface">
+                                      <img src="./assets/banners/pokemon-gcc.jpg" class="bannerMini" />
+                                      <a href="#!">
+                                        <div class="hover-overlay">
+                                          <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
+                                        </div>
+                                      </a>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-6 col-lg-6 col-xl-6">
+                                    <h5>Pokémon JCC Copa Hoenn</h5>
+                                    <div class="d-flex flex-row">
+                                      <div class="text-danger mb-1 me-2">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                      </div>
+                                      <span>14/11/2022</span>
+                                    </div>
+                                    <div class="mt-1 mb-0 text-muted small">
+                                      <span>1 jugador</span>
+                                      <span class="text-primary"> • </span>
+                                      <span>Juego de cartas</span>
+                                      <span class="text-primary"> • </span>
+                                      <span>+7<br /></span>
+                                    </div>
+                                    <div class="mb-2 text-muted small">
+                                      <span></span>
+                                      <!-- <span class="text-primary"> • </span> -->
+                                      <span></span>
+                                      <!-- <span class="text-primary"> • </span> -->
+                                      <span><br /></span>
+                                    </div>
+                                    <p class="">
+                                      Participa y gana en el torneo. Grandes premios para los ganadores.
+                                    </p>
+                                    <p>Primer lugar: 1 paquete de vienesas</p>
+                                  </div>
+                                  <div class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
+                                    <div class="d-flex flex-row align-items-center mb-1">
+                                      <h4 class="mb-1 me-1">Inscripción gratis</h4>
+                                    </div>
+                                    <h6 class="text-success">Inscripciones abiertas</h6>
+                                    <div class="d-flex flex-column mt-4">
+                                      <a href="#modalInscribirTorneo" class="btn btn-dark btn-sm"
+                                        type="button">Inscribirse</a>
+                                      <a href="#modalDetallesTorneo" class="btn btn-outline-dark btn-sm mt-2" type="a">
+                                        Detalles
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row justify-content-center mb-3">
+                          <div class="col-md-12 col-xl-10">
+                            <div class="card shadow-0 border rounded-3">
+                              <div class="card-body">
+                                <div class="row">
+                                  <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                                    <div class="bg-image hover-zoom ripple rounded ripple-surface">
+                                      <img src="./assets/banners/lol.jpg" class="bannerMini" />
+                                      <a href="#!">
+                                        <div class="hover-overlay">
+                                          <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
+                                        </div>
+                                      </a>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-6 col-lg-6 col-xl-6">
+                                    <h5>Torneo League of Legends</h5>
+                                    <div class="d-flex flex-row">
+                                      <div class="text-danger mb-1 me-2">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                      </div>
+                                      <span>10/11/2022</span>
+                                    </div>
+                                    <div class="mt-1 mb-0 text-muted small">
+                                      <span>5 jugadores</span>
+                                      <span class="text-primary"> • </span>
+                                      <span>MOBA</span>
+                                      <span class="text-primary"> • </span>
+                                      <span>+12<br /></span>
+                                    </div>
+                                    <div class="mb-2 text-muted small">
+                                      <span></span>
+                                      <!-- <span class="text-primary"> • </span> -->
+                                      <span></span>
+                                      <!-- <span class="text-primary"> • </span> -->
+                                      <span><br /></span>
+                                    </div>
+                                    <p class="">
+                                      Participa y gana en el torneo. Grandes premios para los ganadores.
+                                    </p>
+                                    <p>Primer lugar: 1 sopaipilla con ketchup</p>
+                                  </div>
+                                  <div class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
+                                    <div class="d-flex flex-row align-items-center mb-1">
+                                      <h4 class="mb-1 me-1">Inscripción: $1.000</h4>
+                                    </div>
+                                    <h6 class="text-success">Inscripciones abiertas</h6>
+                                    <div class="d-flex flex-column mt-4">
+                                      <a href="#modalInscribirTorneo" class="btn btn-dark btn-sm"
+                                        type="button">Inscribirse</a>
+                                      <a href="#modalDetallesTorneo" class="btn btn-outline-dark btn-sm mt-2"
+                                        type="button">
+                                        Detalles
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row justify-content-center mb-3">
+                          <div class="col-md-12 col-xl-10">
+                            <div class="card shadow-0 border rounded-3">
+                              <div class="card-body">
+                                <div class="row">
+                                  <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                                    <div class="bg-image hover-zoom ripple rounded ripple-surface">
+                                      <img src="./assets/banners/pokemon-go.jpg" class="bannerMini" />
+                                      <a href="#!">
+                                        <div class="hover-overlay">
+                                          <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
+                                        </div>
+                                      </a>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-6 col-lg-6 col-xl-6">
+                                    <h5>Torneo Pokémon Go Copa Halloween</h5>
+                                    <div class="d-flex flex-row">
+                                      <div class="text-danger mb-1 me-2">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                      </div>
+                                      <span>31/10/2022</span>
+                                    </div>
+                                    <div class="mt-1 mb-0 text-muted small">
+                                      <span>1 jugador</span>
+                                      <span class="text-primary"> • </span>
+                                      <span>Móvil</span>
+                                      <span class="text-primary"> • </span>
+                                      <span>+10<br /></span>
+                                    </div>
+                                    <div class="mb-2 text-muted small">
+                                      <span></span>
+                                      <!-- <span class="text-primary"> • </span> -->
+                                      <span></span>
+                                      <!-- <span class="text-primary"> • </span> -->
+                                      <span><br /></span>
+                                    </div>
+                                    <p class="">
+                                      Participa y gana en el torneo. Grandes premios para los ganadores.
+                                    </p>
+                                    <p>Primer lugar: 1 Pikachu</p>
+                                  </div>
+                                  <div class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
+                                    <div class="d-flex flex-row align-items-center mb-1">
+                                      <h4 class="mb-1 me-1">Inscripción gratis</h4>
+                                    </div>
+                                    <h6 class="text-danger">Inscripciones cerradas</h6>
+                                    <div class="d-flex flex-column mt-4">
+                                      <a href="#" class="btn btn-dark btn-sm" type="button">Inscribirse</a>
+                                      <a href="#modalDetallesTorneo" class="btn btn-outline-dark btn-sm mt-2"
+                                        type="button">
+                                        Detalles
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row justify-content-center mb-3">
+                          <div class="col-md-12 col-xl-10">
+                            <div class="card shadow-0 border rounded-3">
+                              <div class="card-body">
+                                <div class="row">
+                                  <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                                    <div class="bg-image hover-zoom ripple rounded ripple-surface">
+                                      <img src="./assets/banners/fifa.webp" class="bannerMini" />
+                                      <a href="#!">
+                                        <div class="hover-overlay">
+                                          <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
+                                        </div>
+                                      </a>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-6 col-lg-6 col-xl-6">
+                                    <h5>Torneo FIFA 23</h5>
+                                    <div class="d-flex flex-row">
+                                      <div class="text-danger mb-1 me-2">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                      </div>
+                                      <span>20/10/2022</span>
+                                    </div>
+                                    <div class="mt-1 mb-0 text-muted small">
+                                      <span>1 jugador</span>
+                                      <span class="text-primary"> • </span>
+                                      <span>Fútbol</span>
+                                      <span class="text-primary"> • </span>
+                                      <span>+10<br /></span>
+                                    </div>
+                                    <div class="mb-2 text-muted small">
+                                      <span></span>
+                                      <!-- <span class="text-primary"> • </span> -->
+                                      <span></span>
+                                      <!-- <span class="text-primary"> • </span> -->
+                                      <span><br /></span>
+                                    </div>
+                                    <p class="">
+                                      Participa y gana en el torneo. Grandes premios para los ganadores.
+                                    </p>
+                                    <p>Primer lugar: 1 pelota</p>
+                                  </div>
+                                  <div class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
+                                    <div class="d-flex flex-row align-items-center mb-1">
+                                      <h4 class="mb-1 me-1">Inscripción: $2.000</h4>
+                                    </div>
+                                    <h6 class="text-danger">Inscripciones cerradas</h6>
+                                    <div class="d-flex flex-column mt-4">
+                                      <a href="#" class="btn btn-dark btn-sm" type="button">Inscribirse</a>
+                                      <a href="#modalDetallesTorneo" class="btn btn-outline-dark btn-sm mt-2"
+                                        type="button">
+                                        Detalles
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  </div>
+  </div>
+
+</body>
+
+</html>
+
+<div id="modalInscribirTorneo" class="modalDialog py-5">
+  <div>
+    <a href="#close" title="Close" class="close">X</a>
+    <div class="col-12">
+      <div>
+        <div id="contenedor">
+          <div id="contenido">
+            <h1>Inscripción a torneo</h1>
+            <form>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Nombre y apellidos</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1"
+                  placeholder="Nombre1 Apellido1 Apellido2">
+              </div>
+              <br>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">RUT</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="99.999.999-9">
+              </div>
+              <br>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Correo electrónico</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="ejemplo@mail.com">
+              </div>
+              <br>
+
+              <a href="#close" type="button" class="btn btn-primary">Inscribirse</a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="modalDetallesTorneo" class="modalDialog py-5">
+  <div>
+    <a href="#close" title="Close" class="close">X</a>
+    <div class="col-12">
+      <div>
+        <div id="contenedor">
+          <div id="contenido">
+            <section>
+              <h1>Detalles de Torneo de League of Legends</h1>
+              <!-- <section style="background-color: #eee;">
+                <div class="container py-5">
+                  <div class="row justify-content-center">
+                    <div class="col-md-8 col-lg-6 col-xl-12"> -->
+                      <div class="card text-black">
+                        <i class="fab fa-apple fa-lg pt-3 pb-1 px-3"></i>
+                        <img src="./assets/banners/lol.jpg" class="card-img-top" alt="Apple Computer" style="height:10%; width: 10%; size:cover"/>
+                        <div class="card-body">
+                          <div class="text-center">
+                            <h5 class="card-title">Torneo de League of Legends</h5>
+                            <p class="text-muted mb-4">Fecha y hora: 10/11/2022 4:00 PM</p>
+                          </div>
+                          <div>
+                            <div class="">
+                              <h5>Detalles: </h5><span>Participa y gana en el torneo. Grandes premios para los
+                                ganadores.</span>
+                            </div>
+                            <br>
+                            <div class="">
+                              <h5>Premios</h5>
+                              <p>Primer lugar: 1 sopaipilla con ketchup</p>
+                              <p>Segundo lugar: Media sopaipilla con ketchup</p>
+                              <p>Tercer lugar: Media sopaipilla sin ketchup</p>
+                            </div>
+                          </div>
+
+                          <div class="col-md-6 col-lg-3 col-xl-3">
+                            <div class="d-flex flex-row align-items-center mb-1">
+                              <h4 class="mb-1 me-1">Inscripción: $1.000</h4>
+                            </div>
+                            <h6 class="text-success">Inscripciones abiertas</h6>
+                            <div class="d-flex flex-column mt-4">
+                              <a href="#modalInscribirTorneo" class="btn btn-primary btn-sm"
+                                type="button">Inscribirse</a>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                    <!-- </div>
+                  </div>
+                </div>
+              </section> -->
+
+          </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
